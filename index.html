@@ -330,7 +330,9 @@
           </a>
         </div>
       </div>
-      <form class="contact-form">
+
+      <!-- Working Contact Form (Formspree) -->
+      <form action="https://formspree.io/f/manddbbk" method="POST" class="contact-form">
         <div class="form-group">
           <label for="name">Your Name</label>
           <input id="name" name="name" type="text" required/>
@@ -390,12 +392,6 @@
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
       });
-    });
-
-    // Form submission (no demo alert)
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      // You can add your own form submission logic here
     });
   </script>
 </body>
